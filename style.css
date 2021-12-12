@@ -24,7 +24,7 @@ nav a:hover{
 
 /*Image*/
 img{
-	transform: translateX(+10%);
+	height: 60vh;
 }
 
 /*Footer*/
