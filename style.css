@@ -47,16 +47,18 @@ nav .dropdown-1, nav .dropdown-2{
 nav .content{
 	display: none;
 }
-nav .dropdown-1:hover .content, nav .dropdown-2:hover .content{
-	display: block;
-	display: flex;
-	flex-direction: column;
-	position: absolute;
-	background-color: #2a2a3f;
-	top: 64px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
+@media screen and (min-width: 750px){
+	nav .dropdown-1:hover .content, nav .dropdown-2:hover .content{
+		display: block;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		background-color: #2a2a3f;
+		top: 64px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+	}
 }
 @media screen and (max-width: 750px){
 	nav .content{
