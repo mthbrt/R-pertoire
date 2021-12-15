@@ -8,11 +8,10 @@
   text-align: center;
   text-decoration: none;
 }
-
 body{
-	background-image: url(https://www.pngmart.com/files/13/Vector-Pattern-Transparent-Image.png);
-	background-size: cover;
+	background: url(Image.jpg);
 }
+
 /* Titre */
 h2{
 	background-color: #fff;
@@ -46,7 +45,7 @@ nav .dropdown-1, nav .dropdown-2{
 	position: relative;
 }
 nav .content{
-	display: none
+	display: none;
 }
 nav .dropdown-1:hover .content, nav .dropdown-2:hover .content{
 	display: block;
@@ -59,12 +58,16 @@ nav .dropdown-1:hover .content, nav .dropdown-2:hover .content{
 	transform: translateX(-50%);
 	width: 100%;
 }
-@media screen and (max-width: 810px){
-	nav .dropdown-1:hover .content, nav .dropdown-2:hover .content{
+@media screen and (max-width: 750px){
+	nav .content{
 	position: relative;
-	top: 0;
-	left: 50%;
+	display: block;
+	display: flex;
+	flex-direction: column;
 	background-color: transparent;
+	}
+	nav .dropdown-1, nav .dropdown-2{
+	width: 100%;
 	}
 }
 
